@@ -1,0 +1,12 @@
+[Unit]
+Description=Gunicorn WSGI to server Rest Flask 
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/home/servers/rest_flask/
+Environment="PATH=/home/servers/rest_flask/venv/bin"
+ExecStart=/home/servers/rest_flask/venv/bin/gunicorn --workers 3 --certfile=/home/servers/rest_flask/https_cert/cert.cer --keyfile=/home/servers/rest_flask/https_cert/cert.key --bind <NODE_IP>:443 wsgi:app --access-logfile /home/servers/logs/gunicorn/access.log --error-logfile= /home/servers/logs/gunicorn/error.log
+
+[Install]
+WantedBy=multi-user.target
