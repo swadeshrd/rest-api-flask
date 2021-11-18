@@ -47,7 +47,7 @@ Settings for [Black](https://pypi.org/project/black/): code formatter, [Flake8](
 
     > (venv) ...\rest_flask> `black .\src`\
     > (venv) ...\rest_flask> `isort .\src`\
-    > (venv) ...\rest_flask> `flake .\src`\
+    > (venv) ...\rest_flask> `flake .\src`
 
 Useful VS code Extensions:
 
