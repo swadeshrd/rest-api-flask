@@ -6,7 +6,7 @@
     $ `python3.9 -V` should show python 3.9.5 version, else install
     
 ***Install***\
-    $ `sudo apt-get install gcc openssl-devel bzip2-devel libffi-devel zlib-devel`
+    $ `sudo apt-get install gcc openssl-devel bzip2-devel libffi-devel zlib-devel
     $ `wget https://www.python.org/ftp/python/3.9.5/Python-3.9.5.tgz`
     $ `tar xzf Python-3.9.5.tgz`
     $ `cd Python-3.9.5`
